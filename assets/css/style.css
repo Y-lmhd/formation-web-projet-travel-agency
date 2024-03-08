@@ -1,0 +1,238 @@
+/* global rules */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.h1 {
+    margin: 0;
+    font-size: 3em;
+    font-family: "Crete Round", serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.wrapper {
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header section */
+header {
+    box-sizing: border-box;
+    background-color: #efefef;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.point-orange {
+    color: #ffb703
+}
+
+#top-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-menu li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+#top-menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* MAIN SECTION */
+
+#main-page {
+    max-width: 100%;
+    min-height: 70vh;
+    padding: 10px;
+    background-image: url('../img/main.jpg');
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.main-page-title {
+    padding: 100px 0 0;
+    color: #333;
+    font-size: 4em;
+}
+
+.main-page-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    width: 120px;
+    padding: 10px 15px;
+    letter-spacing: 1.3px;
+    border: 1px solid #ffa703;
+    border-radius: 3px;
+    background-color: #ffa703;
+    color: #fff;
+}
+.main-page-button:hover {
+    background-color: #ff8e00;
+    color: #fff;
+}
+
+/* CARDS SECTION */
+#cards{
+    padding: 10vh 0;
+}
+#cards .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    max-width: 30%;
+    text-align: center;
+}
+.card h3{
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+}
+.card p{
+    text-align: justify;
+} 
+
+/* OFFERS SECTION */
+
+#offers{
+    background-color: #efefef;
+}
+#offers .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#offers article{
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.overlay{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 15px 10px 5px 10px;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.95;
+}
+.overlay h3{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.overlay p{
+    font-size: 14px;
+    font-style: italic;
+
+}
+.overlay a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    width: 120px;
+    margin: 10px 0;
+    padding: 7px 10px;
+    letter-spacing: 1.3px;
+    border: 1px solid #ffa703;
+    border-radius: 3px;
+    background-color: #ffa703;
+    color: #fff;
+}
+#offers article:hover > .overlay{
+    background-color: #fff6ea;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+#offers article:hover > .overlay a {
+    background-color: #ff8e00;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* CONTACT SECTION */
+#contact{
+    padding: 5vh;
+    text-align: center;
+}
+#contact h3{
+    display: inline-block;
+    width: 400px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #ff8e00;
+    text-align: center;
+}
+#contact form{
+    margin: 50px 0 10px 0;
+}
+
+#contact form > input{
+    font-size: 1em;
+    margin-right: 20px;
+    padding: 7px 12px;
+    line-height: 1.2;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#contact form > input:focus{
+    outline:none;
+    border: 1px solid #333;
+}
+#contact form > button{
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 7px 10px;
+    letter-spacing: 1.3px;
+    border: 1px solid #ffa703;
+    border-radius: 3px;
+    background-color: #ffa703;
+    color: #fff;
+}
+#contact form > button:hover{
+    background-color: #E2960A;
+}
+footer{
+    padding: 5vh 0;
+    background-color: #333;
+    text-align: center;
+    color: #ccc;
+}
+footer{
+    padding: 5vh 0;
+    background-color: #333;
+    text-align: center;
+    color: #ccc;
+}
+footer .h1{
+    color: #fff;
+}
